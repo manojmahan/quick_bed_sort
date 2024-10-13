@@ -7,7 +7,7 @@ cd quick_bed_sort
 ## 2. Create environment
 ~~~
 mamba create -n bed_sort_env python=3.9
-mamba activate bed_sort
+mamba activate bed_sort_env
 ~~~
 ## 3. install required libraries
 ~~~
