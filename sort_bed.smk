@@ -28,6 +28,6 @@ rule SortChromo:
 	output:
 		top_100_lines = "sorted/for_{sample}.bed"
 	shell:
-		"sh scripts/get_top_100.sh \"{input.all_runs}\" {output.top_100_lines}"
+		"sh scripts/get_sorted.sh \"{input.all_runs}\" {output.top_100_lines}"
 	
 	
