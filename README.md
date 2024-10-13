@@ -19,8 +19,10 @@ mamba install pandas
 
 ## 4. Download the data
 ~~~
-curl -JLO "https://figshare.com/ndownloader/files/49358275?private_link=727f8d920a1b8415f09a" -o data/shuf.a.bed.gz
-curl -JLO "https://figshare.com/ndownloader/files/49358278?private_link=727f8d920a1b8415f09a" -o data/shuf.a.bed.gz
+curl -JLO "https://figshare.com/ndownloader/files/49358275?private_link=727f8d920a1b8415f09a"
+curl -JLO "https://figshare.com/ndownloader/files/49358278?private_link=727f8d920a1b8415f09a"
+mv shuf.a.bed.gz data/
+mv shuf.b.bed.gz data/
 ~~~
 
 ## 5. Split the file for each chromosome
