@@ -23,13 +23,13 @@ curl -JLO "https://figshare.com/ndownloader/files/49358275?private_link=727f8d92
 curl -JLO "https://figshare.com/ndownloader/files/49358278?private_link=727f8d920a1b8415f09a" -o data/shuf.a.bed.gz
 ~~~
 
-## 4. Split the file for each chromosome
+## 5. Split the file for each chromosome
 ~~~
 zcat "data/shuf.a.bed.gz" | awk '{print >> "data/"$1".bed"}'
 zcat "data/shuf.b.bed.gz" | awk '{print >> "data/"$1".bed"}'
 ~~~
 
-## 5. Run Snakemake to get the sorted file
+## 6. Run Snakemake to get the sorted file
 ~~~
 snakemake --snakefile sort_bed.smk sorted/for_sort.bed -j1
 ~~~
